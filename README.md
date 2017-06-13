@@ -1,2 +1,1 @@
-# Comment-Approve
-js实现评论-点赞
+js实现类似微博的评论功能-点赞功能
