@@ -1,0 +1,207 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: none;
+}
+
+body { 
+	font-size: 12px; 
+	line-height: 120%; 
+	text-align: center; 
+	color:#333; 
+	padding: 20px;
+}
+
+a { 
+	color: #333; 
+	text-decoration: none;
+}
+
+.clearfix:after { 
+	content:""; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	/*content:"."; */
+	/*visibility:hidden*/
+}
+
+/*.clearfix { *height:1%;}*/
+
+
+#list { 
+	width: 540px;
+	margin: 0 auto; 
+	text-align: left;
+}
+
+.box { 
+	width: 540px; 
+	border-top: 1px solid #eee; 
+	position: relative;  
+	padding: 20px 0
+}
+
+.box:hover .close { display: block;}
+
+.close { 
+	display: none; 
+	width: 28px; 
+	height: 28px; 
+	line-height: 27px; 
+	position: absolute; 
+	top:0px; 
+	right: 0px; 
+	border: 1px solid #eee; 
+	background: #f2f4f7; 
+	text-align: center;
+}
+
+.close:hover { background: #c8d2e2; text-decoration: none;}
+
+.head { 
+	width: 60px; 
+	height: 60px; 
+	float: left; 
+	margin-right: 10px;
+}
+
+.content { width: 440px; float: left; }
+
+.content .main { margin-bottom: 10px;}
+
+.content .main .txt { margin-bottom: 10px;}
+
+.content .main .txt .user { color: #369; }
+
+.content .main .pic { 
+	width: 200px; 
+	margin-right: 5px; 
+	border: 1px solid #eee;
+}
+
+.content .info { 
+	height: 20px; 
+	line-height: 19px; 
+	font-size: 12px; 
+	margin: 0 0 10px 0;
+}
+
+.content .info .time { 
+	display: inline-block;
+	height: 20px; 
+	color: #ccc; 
+	padding-left: 20px; 
+	background: url("../img/bg1.jpg") no-repeat left top;
+	/*float: left; */
+}
+
+.content .info .praise { 
+	height: 20px; 
+	color: #369; 
+	float: right; 
+	padding-left: 18px; 
+	background: url("../img/bg2.jpg") no-repeat left top;
+}
+
+.content .info .praise:hover { 
+	text-decoration: underline; 
+	background: url("../img/bg3.jpg") no-repeat left top;
+}
+
+.content .praises-total { 
+	height: 20px; 
+	background: url("../img/praise.png") no-repeat 5px 5px rgb(247, 247, 247); 
+	margin: 0 0 10px 0; 
+	padding: 5px 0 5px 25px; 
+	line-height: 19px;
+}
+
+.comment-box { 
+	padding: 10px 0; 
+	border-top: 1px solid #eee;
+}
+
+.comment-box:hover { background: rgb(247, 247, 247);}
+
+.comment-box .myhead { 
+	width: 30px; 
+	height: 30px; 
+	float: left; 
+	margin-right: 10px;
+}
+
+.comment-box .comment-content { 
+	width: 400px; 
+	float: left; 
+}
+
+.comment-box .comment-content .comment-time { 
+	color: #ccc; 
+	margin-top: 3px; 
+	line-height: 16px; 
+	position: relative;
+}
+
+.comment-box .comment-content .comment-time .comment-praise { 
+	display: none; 
+	height: 20px; 
+	color: #369; 
+	padding-left: 17px; 
+	background: url("../img/praise.png") no-repeat;  
+	position: absolute; 
+	bottom: 0px; 
+	right: 44px;
+}
+
+.comment-box .comment-content .comment-time .comment-operate { 
+    height: 20px;  
+    display: none; 
+    color: #369; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 10px;
+}
+
+.comment-box .comment-content:hover .comment-time .comment-praise { display: inline-block;}
+.comment-box .comment-content:hover .comment-time .comment-operate { display: inline-block;}
+
+
+.content .text-box .comment { 
+	width: 428px; 
+	height: 15px; 
+	border: 1px solid #eee; 
+	display: block; 
+	padding: 5px; 
+	resize: none; 
+	color: #ccc
+}
+
+.content .text-box .btn { 
+	width: 65px; 
+	height: 25px; 
+	font-size: 12px; 
+	font-weight: bold; 
+	display: none; 
+	float: right; 
+	border: 1px solid #0C528D; 
+	color: #fff; 
+	background: #4679AC;
+}
+
+.content .text-box .btn-off { 
+	border: 1px solid #ccc; 
+	color: #ccc; 
+	background: #F7F7F7;
+}
+
+.content .text-box .word{ 
+	display: none; 
+	float: right; 
+	margin: 7px 10px 0 0; 
+	color: #666;
+}
+
+.content .text-box-on .comment{ height: 50px; color: #333;}
+.content .text-box-on .btn{ display: inline;}
+.content .text-box-on .word{ display: inline;}
